@@ -1,172 +1,172 @@
-# Nux Programming Language - Windows Distribution\r
-\r
-```\r
-████     ██████████████      ███╗    ██╗██╗    ██╗██╗    ██╗\r
-████     ██████████████      ████╗   ██║██║    ██║╚██╗  ██╔╝\r
-████     ████                ██╔██╗  ██║██║    ██║ ╚██╗██╔╝ \r
-████     ████                ██║╚██╗ ██║██║    ██║  ╚███╔╝  \r
-██████████████████████       ██║ ╚██╗██║██║    ██║   ███║   \r
-██████████████████████       ██║  ╚████║██║    ██║  ██╔██╗  \r
-         ████     ████       ██║   ╚███║██║    ██║ ██╔╝╚██╗ \r
-         ████     ████       ██║    ╚██║██║    ██║██╔╝  ╚██╗\r
-█████████████     ████       ██║     ╚█║╚██████╔╝██║      ██║\r
-█████████████     ████       ╚═╝      ╚╝ ╚═════╝ ╚═╝      ╚═╝\r
-```\r
-\r
-**Version:** 1.0.0  \r
-**Platform:** Windows 10/11 (x64)\r
-\r
-## Quick Start\r
-\r
-Install Nux by running the installer as Administrator:\r
-\r
-```cmd\r
-setup.bat\r
-```\r
-\r
-## System Requirements\r
-\r
-- **OS:** Windows 10 (build 10586+) or Windows 11\r
-- **Architecture:** x64 (64-bit)\r
-- **Disk Space:** ~100 MB\r
-- **RAM:** 512 MB minimum\r
-\r
-## Installation\r
-\r
-### 1. Extract the Package\r
-\r
-Extract the ZIP file to a folder, e.g., `C:\nux_pack_windows`\r
-\r
-### 2. Run the Installer as Administrator\r
-\r
-**Right-click** `setup.bat` and select **"Run as administrator"**\r
-\r
-The installer will:\r
-- ✓ Check administrator privileges\r
-- ✓ Create installation directories\r
-- ✓ Install Nux runtime and libraries\r
-- ✓ Add Nux to system PATH\r
-- ✓ Register .nux file extension\r
-\r
-### 3. Verify Installation\r
-\r
-Open a **new** Command Prompt or PowerShell and run:\r
-\r
-```cmd\r
-nux --version\r
-```\r
-\r
-You should see: `Nux v1.0.0 (Windows)`\r
-\r
-## Getting Started\r
-\r
-### Start the REPL\r
-\r
-```cmd\r
-nux repl\r
-```\r
-\r
-### Run Example Programs\r
-\r
-```cmd\r
-REM Hello World\r
-nux examples\hello.nux\r
-\r
-REM Web Server\r
-nux examples\web_server.nux\r
-\r
-REM AI Demo\r
-nux examples\ai_demo.nux\r
-```\r
-\r
-### Create Your First Program\r
-\r
-```cmd\r
-echo import "std.io"; println("Hello, Nux!"); > hello.nux\r
-nux hello.nux\r
-```\r
-\r
+# Nux Programming Language - Windows Distribution
+
+```
+████     ██████████████      ███╗    ██╗██╗    ██╗██╗    ██╗
+████     ██████████████      ████╗   ██║██║    ██║╚██╗  ██╔╝
+████     ████                ██╔██╗  ██║██║    ██║ ╚██╗██╔╝ 
+████     ████                ██║╚██╗ ██║██║    ██║  ╚███╔╝  
+██████████████████████       ██║ ╚██╗██║██║    ██║   ███║   
+██████████████████████       ██║  ╚████║██║    ██║  ██╔██╗  
+         ████     ████       ██║   ╚███║██║    ██║ ██╔╝╚██╗ 
+         ████     ████       ██║    ╚██║██║    ██║██╔╝  ╚██╗
+█████████████     ████       ██║     ╚█║╚██████╔╝██║      ██║
+█████████████     ████       ╚═╝      ╚╝ ╚═════╝ ╚═╝      ╚═╝
+```
+
+**Version:** 1.0.0  
+**Platform:** Windows 10/11 (x64)
+
+## Quick Start
+
+Install Nux by running the installer as Administrator:
+
+```cmd
+setup.bat
+```
+
+## System Requirements
+
+- **OS:** Windows 10 (build 10586+) or Windows 11
+- **Architecture:** x64 (64-bit)
+- **Disk Space:** ~100 MB
+- **RAM:** 512 MB minimum
+
+## Installation
+
+### 1. Extract the Package
+
+Extract the ZIP file to a folder, e.g., `C:\nux_pack_windows`
+
+### 2. Run the Installer as Administrator
+
+**Right-click** `setup.bat` and select **"Run as administrator"**
+
+The installer will:
+- ✓ Check administrator privileges
+- ✓ Create installation directories
+- ✓ Install Nux runtime and libraries
+- ✓ Add Nux to system PATH
+- ✓ Register .nux file extension
+
+### 3. Verify Installation
+
+Open a **new** Command Prompt or PowerShell and run:
+
+```cmd
+nux --version
+```
+
+You should see: `Nux v1.0.0 (Windows)`
+
+## Getting Started
+
+### Start the REPL
+
+```cmd
+nux repl
+```
+
+### Run Example Programs
+
+```cmd
+REM Hello World
+nux examples\hello.nux
+
+REM Web Server
+nux examples\web_server.nux
+
+REM AI Demo
+nux examples\ai_demo.nux
+```
+
+### Create Your First Program
+
+```cmd
+echo import "std.io"; println("Hello, Nux!"); > hello.nux
+nux hello.nux
+```
+
 ## What's Included\r
-\r
-- **Standard Libraries** (79 files)\r
-  - `lib\std\` - Core utilities, I/O, networking, graphics\r
-  - `lib\ai\` - Neural networks, transformers, GANs, RL\r
-  - `lib\os\` - Kernel, scheduler, memory management\r
-  - `lib\embedded\` - Hardware control, GPIO, sensors\r
-\r
-- **Examples**\r
-  - `hello.nux` - Basic syntax and I/O\r
-  - `web_server.nux` - HTTP server\r
-  - `ai_demo.nux` - Neural network training\r
-\r
-- **Tools**\r
-  - `nux.bat` - Runtime and REPL\r
-  - `nuxc.bat` - Compiler\r
-  - `nuxr.bat` - Script runner\r
-\r
-## Windows-Specific Features\r
-\r
-- **File Association:** Double-click .nux files to run them\r
-- **ANSI Colors:** Full color support in Windows Terminal\r
-- **PowerShell Integration:** Works in both CMD and PowerShell\r
-- **Registry Integration:** Proper file type registration\r
-\r
-## Troubleshooting\r
-\r
-### Access Denied\r
-\r
-Make sure to run `setup.bat` as Administrator:\r
-1. Right-click `setup.bat`\r
-2. Select "Run as administrator"\r
-\r
-### Command Not Found\r
-\r
-Restart your terminal (Command Prompt or PowerShell) after installation.\r
-\r
-If the issue persists, manually add to PATH:\r
-1. Open System Properties → Advanced → Environment Variables\r
-2. Add `C:\Program Files\Nux\bin` to PATH\r
-\r
-### ANSI Colors Not Working\r
-\r
-Use Windows Terminal (recommended) or update Windows to build 10586+.\r
-\r
-### Antivirus Blocking Installation\r
-\r
-Some antivirus software may flag the installer. Add an exception for:\r
-- `C:\Program Files\Nux\`\r
-- `setup.bat`\r
-\r
-## Uninstallation\r
-\r
-Run the installer with the uninstall flag:\r
-\r
-```cmd\r
-setup.bat uninstall\r
-```\r
-\r
-Or manually:\r
-1. Delete `C:\Program Files\Nux`\r
-2. Remove from PATH in Environment Variables\r
-3. Delete registry keys under `HKCU\Software\Classes\.nux`\r
-\r
-## Documentation\r
-\r
-- **Language Guide:** https://nux-lang.org/docs\r
-- **API Reference:** https://nux-lang.org/api\r
-- **Examples:** https://github.com/nux-lang/examples\r
-\r
-## Support\r
-\r
-- **Issues:** https://github.com/nux-lang/nux/issues\r
-- **Community:** https://discord.gg/nux-lang\r
-- **Email:** support@nux-lang.org\r
-\r
-## License\r
-\r
-Nux Programming Language is released under the MIT License.  \r
-See LICENSE.txt file for details.\r
-\r
----\r
-\r
-**Happy Coding!** 🚀\r
+
+- **Standard Libraries** (79 files)
+  - `lib\std\` - Core utilities, I/O, networking, graphics
+  - `lib\ai\` - Neural networks, transformers, GANs, RL
+  - `lib\os\` - Kernel, scheduler, memory management
+  - `lib\embedded\` - Hardware control, GPIO, sensors
+
+- **Examples**
+  - `hello.nux` - Basic syntax and I/O
+  - `web_server.nux` - HTTP server
+  - `ai_demo.nux` - Neural network training
+
+- **Tools**
+  - `nux.bat` - Runtime and REPL
+  - `nuxc.bat` - Compiler
+  - `nuxr.bat` - Script runner
+
+## Windows-Specific Features
+
+- **File Association:** Double-click .nux files to run them
+- **ANSI Colors:** Full color support in Windows Terminal
+- **PowerShell Integration:** Works in both CMD and PowerShell
+- **Registry Integration:** Proper file type registration
+
+## Troubleshooting
+
+### Access Denied
+
+Make sure to run `setup.bat` as Administrator:
+1. Right-click `setup.bat`
+2. Select "Run as administrator"
+
+### Command Not Found
+
+Restart your terminal (Command Prompt or PowerShell) after installation.
+
+If the issue persists, manually add to PATH:
+1. Open System Properties → Advanced → Environment Variables
+2. Add `C:\Program Files\Nux\bin` to PATH
+
+### ANSI Colors Not Working
+
+Use Windows Terminal (recommended) or update Windows to build 10586+.
+
+### Antivirus Blocking Installation
+
+Some antivirus software may flag the installer. Add an exception for:
+- `C:\Program Files\Nux\`
+- `setup.bat`
+
+## Uninstallation
+
+Run the installer with the uninstall flag:
+
+```cmd
+setup.bat uninstall
+```
+
+Or manually:
+1. Delete `C:\Program Files\Nux`
+2. Remove from PATH in Environment Variables
+3. Delete registry keys under `HKCU\Software\Classes\.nux`
+
+## Documentation
+
+- **Language Guide:** https://nux-lang.org/docs
+- **API Reference:** https://nux-lang.org/api
+- **Examples:** https://github.com/nux-lang/examples
+
+## Support
+
+- **Issues:** https://github.com/nux-lang/nux/issues
+- **Community:** https://discord.gg/nux-lang
+- **Email:** support@nux-lang.org
+
+## License
+
+Nux Programming Language is released under the MIT License.  
+See LICENSE.txt file for details.
+
+---
+
+**Happy Coding!** 🚀
